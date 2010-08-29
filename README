@@ -1,0 +1,3 @@
+Point your PayPal IPN URL to
+
+http://paypal-ipn-forwarder.heroku.com/?url=<your callback url>

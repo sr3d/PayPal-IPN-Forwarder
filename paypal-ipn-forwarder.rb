@@ -7,7 +7,6 @@
 #
 require 'rubygems'
 require 'sinatra'
-# require 'curb'
 require 'net/http'
 
 configure :production do
@@ -15,6 +14,9 @@ end
 
 get '/' do
   "Point your IPN here with ?url=http://callback_url"
+  url       = params[:url]
+  # res       = Net::HTTP.post_form(URI.parse(url), "google=asdf")  
+  "posted to #{url}"
 end
 
 post '/' do
